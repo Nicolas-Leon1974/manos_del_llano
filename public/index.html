@@ -16,7 +16,7 @@
 <header class="site-header">
   <div class="wrap header-inner">
     <a href="#inicio" class="logo">
-      <img src="../images/logo.jpeg" alt="logo" width="45" height="56">
+      <img src="../public/images/logo.jpeg" alt="logo" width="45" height="56">
       <span class="logo-text">Manos<em>llaneras
   
       </em></span>
@@ -30,9 +30,15 @@
       <a href="#contacto">Contacto</a>
     </nav>
 
+    <div class="header-actions">
+    <button type="button" class="cart-toggle" id="cart-toggle" aria-label="Abrir carrito">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11.2a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 8H6"/><circle cx="9.5" cy="20" r="1.2"/><circle cx="17" cy="20" r="1.2"/></svg>
+      <span class="cart-count" id="cart-count">0</span>
+    </button>
     <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
       <span></span><span></span><span></span>
     </button>
+    </div>
   </div>
 </header>
 
@@ -55,10 +61,10 @@
     <div class="wrap heritage-grid">
       <div class="heritage-media">
         <div class="complete-block media-tall" role="img" aria-label="Talabartero cortando cuero a mano sobre una mesa de trabajo">
-          <img src="images/images (1).jpg" alt="Talabartero cortando cuero a mano sobre una mesa de trabajo">
+          <img src="../public/images/images (1).jpg" alt="Talabartero cortando cuero a mano sobre una mesa de trabajo">
         </div>
         <div class="media-block media-small" role="img" aria-label="Detalle de costura a mano sobre cuero curtido">
-          <img src="images/images (2).jpg" alt="Detalle de costura a mano sobre cuero curtido">
+          <img src="../public/images/images (2).jpg" alt="Detalle de costura a mano sobre cuero curtido">
         </div>
       </div>
       <div class="heritage-copy">
@@ -107,13 +113,11 @@
 
   <!-- MATERIALES -->
   <section class="materials">
-    
-  </section>
-        <span class="kicker" style="font-size: 44px;">Nuestros materiales</span>
-        <h2>Cuero genuino<br>y duradero</h2>
-        <p>Trabajamos únicamente cuero genuino, curtido en talleres colombianos que respetan el proceso tradicional. Con el uso, la piel adquiere una pátina propia: cada rasguño y cada marca cuentan la historia de quien la lleva.</p>
-        <a href="#coleccion" class="btn btn-outline btn-light">Comprar ahora</a>
-      </div>
+    <div class="wrap materials-copy">
+      <span class="kicker">Nuestros materiales</span>
+      <h2>Cuero genuino<br>y duradero</h2>
+      <p>Trabajamos únicamente cuero genuino, curtido en talleres colombianos que respetan el proceso tradicional. Con el uso, la piel adquiere una pátina propia: cada rasguño y cada marca cuentan la historia de quien la lleva.</p>
+      <a href="#coleccion" class="btn btn-outline">Ver colección</a>
     </div>
   </section>
 
@@ -126,66 +130,84 @@
       </div>
 
       <div class="product-grid">
-        <article class="product-card">
+        <article class="product-card" data-id="p1" data-name="Billetera Vaquero" data-price="25000">
           <div class="product-media" style="--tone:#8a4a2c" role="img" aria-label="Billetera de cuero marrón">
             <img src="images/images.jpg" alt="Billetera de cuero marrón" style="width:100%; object-fit:cover">
           </div>
           <h3>Billetera Vaquero</h3>
           <p class="price">$25.000</p>
+          <button type="button" class="btn btn-primary btn-add">Agregar al carrito</button>
         </article>
-        <article class="product-card">
+        <article class="product-card" data-id="p2" data-name="Cinturón trenzado" data-price="18000">
           <div class="product-media" style="--tone:#6e3a24" role="img" aria-label="Cinturón de cuero trenzado">
             <img src="images/images (8).jpg" alt="Cinturón de cuero trenzado" style="width:100%; object-fit:cover">
           </div>
           <h3>Cinturón trenzado</h3>
           <p class="price">$18.000</p>
+          <button type="button" class="btn btn-primary btn-add">Agregar al carrito</button>
         </article>
-        <article class="product-card">
+        <article class="product-card" data-id="p3" data-name="Brazalete llanero" data-price="14000">
           <div class="product-media" style="--tone:#9a5a34" role="img" aria-label="Brazalete de cuero grabado">
             <img src="images/images (9).jpg" alt="Brazalete de cuero grabado" style="width:100%; object-fit:cover">
           </div>
           <h3>Brazalete llanero</h3>
           <p class="price">$14.000</p>
+          <button type="button" class="btn btn-primary btn-add">Agregar al carrito</button>
         </article>
-        <article class="product-card">
+        <article class="product-card" data-id="p4" data-name="Bolso Manos del Llano" data-price="95000">
           <div class="product-media" style="--tone:#5e3220" role="img " aria-label="Bolso de cuero estilo mensajero">
             <img src="images/images (10).jpg" alt="Bolso de cuero estilo mensajero" style="width:100%; object-fit:cover">
           </div>
           <h3>Bolso Manos del Llano</h3>
           <p class="price">$95.000</p>
+          <button type="button" class="btn btn-primary btn-add">Agregar al carrito</button>
         </article>
-        <article class="product-card">
+        <article class="product-card" data-id="p5" data-name="Billetera Sabana" data-price="22000">
           <div class="product-media" style="--tone:#7a4228" role="img" aria-label="Billetera de cuero pequeña">
             <img src="images/images (11).jpg" alt="Billetera de cuero pequeña" style="width:100%; object-fit:cover">
           </div>
           <h3>Billetera Sabana</h3>
           <p class="price">$22.000</p>
+          <button type="button" class="btn btn-primary btn-add">Agregar al carrito</button>
         </article>
-        <article class="product-card">
+        <article class="product-card" data-id="p6" data-name="Brazalete trenzado" data-price="16000">
           <div class="product-media" style="--tone:#8c5230" role="img" aria-label="Brazalete trenzado de cuero">
             <img src="images/images (12).jpg" alt="Brazalete trenzado de cuero" style="width:100%; object-fit:cover">
           </div>
           <h3>Brazalete trenzado</h3>
           <p class="price">$16.000</p>
+          <button type="button" class="btn btn-primary btn-add">Agregar al carrito</button>
         </article>
-        <article class="product-card">
+        <article class="product-card" data-id="p7" data-name="Llavero de caballo" data-price="8000">
           <div class="product-media" style="--tone:#6a3822" role="img" aria-label="Portadocumentos de cuero grabado">
             <img src="images/images (13).jpg" alt="Portadocumentos de cuero grabado" style="width:100%; object-fit:cover">
           </div>
           <h3>Llavero de caballo</h3>
           <p class="price">$8.000</p>
+          <button type="button" class="btn btn-primary btn-add">Agregar al carrito</button>
         </article>
-        <article class="product-card">
+        <article class="product-card" data-id="p8" data-name="Manos del Lago" data-price="15000">
           <div class="product-media" style="--tone:#754024" role="img" aria-label="Bolso grande de cuero color café">
             <img src="images/images (14).jpg" alt="Bolso grande de cuero color café" style="width:100%; object-fit:cover">
           </div>
           <h3>Manos del Lago</h3>
           <p class="price">$15.000</p>
+          <button type="button" class="btn btn-primary btn-add">Agregar al carrito</button>
         </article>
       </div>
 
       <div class="collection-cta">
-        <a href="#contacto" class="btn btn-primary">Comprar ahora</a>
+        <button type="button" class="btn btn-primary" id="open-cart-cta">Ver mi carrito</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFERTAS -->
+  <section class="promos" id="ofertas">
+    <div class="wrap">
+      <div class="section-head">
+      <div class="collection-cta">
+        <a href="#" class="btn btn-primary" id="promo-whatsapp" target="_blank" rel="noopener">Mas información por WhatsApp</a>
       </div>
     </div>
   </section>
@@ -227,6 +249,24 @@
     </p>
   </div>
 </footer>
+
+<div class="cart-overlay" id="cart-overlay" hidden></div>
+<aside class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-label="Carrito de compras" aria-hidden="true">
+  <div class="cart-head">
+    <h2>Tu pedido</h2>
+    <button type="button" class="cart-close" id="cart-close" aria-label="Cerrar carrito">&times;</button>
+  </div>
+  <p class="cart-empty" id="cart-empty">Tu carrito está vacío.</p>
+  <ul class="cart-items" id="cart-items"></ul>
+  <div class="cart-foot">
+    <div class="cart-line"><span>Unidades</span><strong id="cart-units">0</strong></div>
+    <div class="cart-line cart-total"><span>Total</span><strong id="cart-total">$0</strong></div>
+    <button type="button" class="btn btn-primary" id="cart-whatsapp">Pedir por WhatsApp</button>
+    <button type="button" class="btn btn-outline" id="cart-clear">Vaciar carrito</button>
+    <p class="cart-msg" id="cart-msg" role="status"></p>
+    <p class="cart-note">Se abrirá WhatsApp con tu pedido ya escrito. El pedido solo se envía cuando tú lo envíes desde WhatsApp, y el negocio lo confirmará por ese medio. No se realizan pagos en esta página.</p>
+  </div>
+</aside>
 
 <script src="script.js"></script>
 </body>
